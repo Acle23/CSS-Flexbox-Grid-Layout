@@ -1,0 +1,205 @@
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    font-size: 15px;
+    font-family: 'Lexend Deca', cursive;
+    background-color: hsl(0, 0%, 95%);
+}
+
+@media screen and (max-device-width: 375px) {
+    body {
+        display: block;
+        margin: 0 auto;
+        font-size: 15px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: hsl(179, 100%, 13%);
+}
+
+h1 {
+    color: hsl(0, 0%, 95%);
+}
+
+header {
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 400;
+}
+
+.info {
+    color:hsl(31, 77%, 52%);
+}
+
+.container {
+    margin-top: 40px;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 20px;
+}
+
+@media screen and (max-device-width: 375px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: inherit;
+        line-height: 20px;
+    }
+}
+
+button {
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    border-radius: 50px;
+    width: 120px;
+    padding: 12px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+@media screen and (max-device-width: 375px) {
+    button {
+        background-color: #fff;
+        border: none;
+        border-radius: 50px;
+        width: 100px;
+        padding: 12px;
+        font-family: inherit;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid #fff;
+    }
+}
+
+.btn {
+    color: hsl(31, 77%, 52%);
+}
+
+.btn-1 {
+    color: hsl(184, 100%, 22%);
+}
+
+.btn-2 {
+    color: hsl(179, 100%, 13%);
+}
+
+p {
+    max-width: 250px;
+    margin-bottom: 120px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.sedans {
+    height: 350px;
+    padding: 40px;
+    color: #fff;
+    background-color: hsl(31, 77%, 52%);
+}
+
+.sedans:hover {
+    transform: translateY(-10px);
+}
+
+.suvs {
+    height: 350px;
+    padding: 40px;
+    color: #fff;
+    background-color: hsl(184, 100%, 22%);
+}
+
+.suvs:hover {
+    transform: translateY(-10px);
+}
+
+.luxury {
+    height: 350px;
+    padding: 40px;
+    color: #fff;
+    background-color: hsl(179, 100%, 13%);
+}
+
+.luxury:hover {
+    transform: translateY(-10px);
+}
+
+/* Grid Styling */
+
+main {
+    margin: 0 auto;
+}
+
+.grid-container {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 50px ;
+    grid-template-rows: 200px 100px 130px;
+    grid-template-areas: 
+    "header header header header top top"
+    "main main main bottom bottom bottom"
+    "main main main footer footer footer";
+    gap: 10px;
+    max-width: 600px;
+    width: 100%;
+}
+
+@media screen and (max-device-width: 375px) {
+    .grid-container {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: 30px ;
+        grid-template-rows: 100px 50px 70px;
+        grid-template-areas: 
+        "header header header header top top"
+        "main main main bottom bottom bottom"
+        "main main main footer footer footer";
+        gap: 10px;
+        max-width: 300px;
+        width: 100%;
+    }
+}
+
+.item1 {
+    grid-area: header;
+    background-color: hsl(0, 0%, 40%);
+    border-radius: 6px;
+}
+
+.item2 {
+    grid-area: main;
+    background-color: hsl(0, 0%, 60%);
+    border-radius: 6px;
+}
+
+.item3 {
+    grid-area: top;
+    background-color: hsl(0, 0%, 50%);
+    border-radius: 6px;
+}
+
+.item4 {
+    grid-area: bottom;
+    background-color: hsl(0, 0%, 80%);
+    border-radius: 6px;
+}
+
+.item5 {
+    grid-area: footer;
+    background-color: hsl(0, 0%, 90%);
+    border-radius: 6px;
+}
