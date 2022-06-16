@@ -2,7 +2,7 @@ body {
     max-width: 1440px;
     margin: 0 auto;
     font-size: 15px;
-    font-family: 'Lexend Deca';
+    font-family: 'Lexend Deca', sans-serif;
     background-color: hsl(0, 0%, 95%);
 }
 
