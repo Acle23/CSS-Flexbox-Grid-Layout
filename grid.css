@@ -1,0 +1,79 @@
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: hsl(0, 0%, 95%);
+}
+
+@media screen and (max-device-width: 375px) {
+    body {
+        display: block;
+        margin: 0 auto;
+        font-size: 15px;
+    }
+}
+
+main {
+    margin: 0 auto;
+}
+
+.grid-container {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 50px ;
+    grid-template-rows: 200px 100px 130px;
+    grid-template-areas: 
+    "header header header header top top"
+    "main main main bottom bottom bottom"
+    "main main main footer footer footer";
+    gap: 10px;
+    max-width: 600px;
+    width: 100%;
+}
+
+@media screen and (max-device-width: 375px) {
+    .grid-container {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: 30px ;
+        grid-template-rows: 100px 50px 70px;
+        grid-template-areas: 
+        "header header header header top top"
+        "main main main bottom bottom bottom"
+        "main main main footer footer footer";
+        gap: 10px;
+        max-width: 300px;
+        width: 100%;
+    }
+}
+
+.item1 {
+    grid-area: header;
+    background-color: hsl(0, 0%, 40%);
+    border-radius: 6px;
+}
+
+.item2 {
+    grid-area: main;
+    background-color: hsl(0, 0%, 60%);
+    border-radius: 6px;
+}
+
+.item3 {
+    grid-area: top;
+    background-color: hsl(0, 0%, 50%);
+    border-radius: 6px;
+}
+
+.item4 {
+    grid-area: bottom;
+    background-color: hsl(0, 0%, 80%);
+    border-radius: 6px;
+}
+
+.item5 {
+    grid-area: footer;
+    background-color: hsl(0, 0%, 90%);
+    border-radius: 6px;
+}
